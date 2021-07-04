@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+}
+
+.logo{
+    background: url("images/logo2.png") no-repeat;
+    width: 20%;
+    height: 25vh;
+    margin-left: 70px;
+    display: inline-block; 
+}
+
+.header{
+    background: url("images/bg2.jpg") no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.topbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -45px
+}
+
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 5em;
+}
+
+.navigation li{
+    padding: 20px 60px 10px 10px;
+    font-weight: bold;
+}
+
+.navigation li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    border-bottom: 1px solid wheat;
+    color: wheat;
+    padding-bottom: 20px;
+}
+
+.header-content{
+    color: white;
+    padding-top: 200px;
+    padding-left: 100px;
+    font-size: 1.875em;
+}
+
+.text{
+    width: 70vw;
+    font-size: 0.55em;
+    line-height: 150%;
+}
+
+.text a{
+    color: #fff;
+}
+
+.header-buttons{
+    margin-top: 35px;
+}
+
+.header-buttons button{
+    padding: 15px 40px 15px 40px;
+    font-size: 15px;
+    border: 0;
+}
+
+.header-buttons button a{
+    color: black;
+    text-decoration: none;
+}
+
+.header-buttons button:first-child{
+    background: orangered;
+    transition: all 0.9s ease;
+}
+
+.header-buttons button:last-child{
+    opacity: 0.5;
+    margin-left: 10px;
+    transition: all 0.9s ease;
+}
+
+.header-buttons span{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.header-buttons button:first-child:hover{
+    background-color: goldenrod;
+}
+
+.header-buttons button:last-child:hover{
+    opacity: 0.8;
+}
+
+.section{
+    margin-top: 30px;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(45deg, #FFFFFF, #FAF8F9, #EEEEEE);
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px; 
+}
+
+.card-container{
+    width: 320px;
+    height: 400px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.9s ease;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .card{
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.front{
+    backface-visibility: hidden;
+    transform: rotateY(0deg); /* for mozilla */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #eee;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.back{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+
+    border: 1px solid #eee;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.front img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about-text{
+    width: 45vw;
+}
+
+#name{
+    font-size: 1.25em;
+}
+
+.back p{
+    font-size: 1.125em;
+}
+
+.icons img{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+/* .icons img:hover{
+    padding-bottom: 10px;
+    border-bottom: 1px solid orangered;
+} */
+
+.icons{
+    display: flex;
+}
+
+.contact{
+    margin-top: 150px; /* ?? */
+    align-self: flex-start;
+    margin-left: 8%;
+    height: 100%;
+}
+
+input{
+    width: 600px;
+    height: 50px;
+    display: block;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: #ffffff15;
+}
+
+textarea{
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: #ffffff15;
+}
+
+#input-name, #input-mail, textarea{
+    font-size: 16px;
+    /* font-size: 1em; */
+    padding-top: 15px;
+}
+
+#submit-button{
+    margin-top: 50px;
+    width: 120px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+#submit-button:hover{
+    opacity: 0.7;
+    transition: all 0.9s ease;
+}
+
+.contact h1{
+    font-size: 50px;
+}
+
+#mymail{
+    color: black;
+    font-weight: bold;
+}
+
+input:focus, #text-area:focus{
+    outline: none !important;
+}
+
+textarea:focus{
+    outline: none !important;
+}
