@@ -4,21 +4,20 @@ body{
 
 .logo{
     background: url("images/logo2.png") no-repeat;
-    width: 200px;
-    height: 200px;
-    /* position: absolute; */
+    width: 20%;
+    height: 25vh;
     margin-left: 70px;
     display: inline-block; 
 }
 
 .header{
     background: url("images/bg2.jpg") no-repeat;
-    height: 615px;
+    height: 100vh;
     position: relative;
 }
 
 .topbar{
-    width: 1300px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +28,7 @@ body{
 .navigation ul{
     display: flex;
     list-style-type: none;
+    margin-right: 5em;
 }
 
 .navigation li{
@@ -51,12 +51,12 @@ body{
     color: white;
     padding-top: 200px;
     padding-left: 100px;
-    font-size: 30px;
+    font-size: 1.875em;
 }
 
 .text{
-    width: 900px;
-    font-size: 16px;
+    width: 70vw;
+    font-size: 0.55em;
     line-height: 150%;
 }
 
@@ -92,7 +92,7 @@ body{
 
 .header-buttons span{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .header-buttons button:first-child:hover{
@@ -105,7 +105,7 @@ body{
 
 .section{
     margin-top: 30px;
-    height: 1300px;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,15 +177,15 @@ body{
 }
 
 .about-text{
-    width: 600px;
+    width: 45vw;
 }
 
 #name{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .back p{
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .icons img{
@@ -228,6 +228,7 @@ textarea{
 
 #input-name, #input-mail, textarea{
     font-size: 16px;
+    /* font-size: 1em; */
     padding-top: 15px;
 }
 
@@ -260,5 +261,3 @@ input:focus, #text-area:focus{
 textarea:focus{
     outline: none !important;
 }
-
-
