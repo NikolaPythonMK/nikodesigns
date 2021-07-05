@@ -1,5 +1,5 @@
 html{
-    font-size: 100%;
+    font-size: 1.2vw;
 }
 
 body{
@@ -10,7 +10,6 @@ body{
     background: url("images/logo2.png") no-repeat;
     width: 20%;
     height: 25vh;
-    /* margin-left: 90px; */
     margin-left: 7vw;
     display: inline-block;
     margin-top: -2vh;
@@ -22,7 +21,7 @@ body{
     width: 100%;
     position: relative;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
 }
 
 .topbar{
@@ -31,14 +30,12 @@ body{
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    /* top: -25px; */
     top: -3vh;
 }
 
 .navigation ul{
     display: flex;
     list-style-type: none;
-    /* margin-right: 5em; */
     margin-right: 5vw;
 }
 
@@ -60,11 +57,8 @@ body{
 
 .header-content{
     color: white;
-    /* padding-top: 200px; */
     padding-top: 32vh;
-    /* padding-left: 100px; */
     padding-left: 7.5vw;
-    /* font-size: 1.875em; */
     font-size: 1.9rem;
 }
 
@@ -79,14 +73,11 @@ body{
 }
 
 .header-buttons{
-    /* margin-top: 35px; */
     margin-top: 6vh;
 }
 
 .header-buttons button{
-    /* padding: 15px 40px 15px 40px; */
     padding: 2.5vh 3vw 2.5vh 3vw;
-    /* font-size: 15px; */
     font-size: 1rem;
     border: 0;
 }
@@ -126,7 +117,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(45deg, #FFFFFF, #FAF8F9, #EEEEEE);
+    /* background-image: linear-gradient(45deg, #FFFFFF, #FAF8F9, #EEEEEE);
+    background-image: linear-gradient(45deg, #FFFFFF, #FFF, #EEEEEE); */
+    background-color: white;
 }
 
 .about{
@@ -135,7 +128,7 @@ body{
     align-items: center;
     width: 100%;
     height: 100vh;
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
 .about-text{
@@ -144,16 +137,14 @@ body{
 }
 
 .card-container{
-    /* width: 320px; */
     width: 23.5vw;
-    /* height: 400px; */
     height: 68vh;
 }
 
 .card{
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #eee;
     transition: all 0.9s ease;
     transform-style: preserve-3d;
 }
@@ -177,16 +168,15 @@ body{
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #eee;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgb(165, 162, 162) 0px 2px 8px 0px;
 }
 
 .back{
     transform: rotateY(180deg);
     backface-visibility: hidden;
 
-    border: 1px solid #eee;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgb(165, 162, 162) 0px 7px 29px 0px;
 
     display: flex;
     flex-direction: column;
@@ -195,15 +185,12 @@ body{
 }
 
 .front img{
-    /* width: 200px; */
     width: 15vw;
-    /* height: 200px; */
     height: 33vh;
     border-radius: 50%;
 }
 
 #name{
-    /* font-size: 1.25em; */
     font-size: 1.26rem;
 }
 
@@ -212,16 +199,12 @@ body{
 }
 
 .back p{
-    /* font-size: 1.125em; */
     font-size: 1.13rem;
 }
 
 .icons img{
-    /* width: 35px; */
     width: 2.5vw;
-    /* height: 35px; */
     height: 5.5vh;
-    /* margin-right: 15px; */
     margin-right: 1.2vw;
 }
 
@@ -235,7 +218,6 @@ body{
 }
 
 .contact{
-    /* margin-top: 150px; */
     margin-top: 25vh;
     align-self: flex-start;
     margin-left: 8%;
@@ -243,34 +225,26 @@ body{
 }
 
 input{
-    /* width: 600px; */
     width: 45vw;
-    /* height: 50px; */
     height: 8.1vh;
     display: block;
-    /* margin-bottom: 10px; */
     margin-bottom: 2%;
     border: 0;
     border-bottom: 1px solid black;
-    background-color: #ffffff15;
 }
 
 textarea{
     border: 0;
     border-bottom: 1px solid black;
-    background-color: #ffffff15;
 }
 
 #input-name, #input-mail, textarea{
-    /* font-size: 16px; */
     font-size: 1.1rem;
     padding-top: 15px;
 }
 
 #submit-button{
-    /* margin-top: 50px; */
     margin-top: 7%;
-    /* width: 120px; */
     width: 9vw;
     border: 0;
     background-color: black;
@@ -283,7 +257,6 @@ textarea{
 }
 
 .contact h1{
-    /* font-size: 50px; */
     font-size: 3.1rem;
 }
 
