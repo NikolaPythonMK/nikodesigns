@@ -22,7 +22,7 @@ body{
     width: 100%;
     position: relative;
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size:contain;
 }
 
 .topbar{
